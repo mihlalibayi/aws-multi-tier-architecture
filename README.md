@@ -85,6 +85,10 @@ cost. In production I would keep them private with a NAT Gateway.
 
 Everything runs within the AWS Free Tier. Total cost: $0.
 
+
+#### For a full breakdown of every decision I made during the build, 
+see the [VPC Setup Notes](infrastructure/vpc-setup-notes.md).
+
 ## What I would improve
 
 Add Auto Scaling, HTTPS on the ALB using ACM, move EC2 into 
