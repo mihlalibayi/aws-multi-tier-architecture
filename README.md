@@ -99,6 +99,7 @@ This project runs within the AWS Free Tier. Total monthly cost: $0. The instance
 ## What I would improve
 
 - Add a NAT Gateway and move EC2 back into private subnets (the production-correct pattern)
+- Replace the bastion host with AWS Systems Manager Session Manager. SSH-based bastions are an older pattern. Session Manager removes the need for port 22 to be open at all, uses IAM for access control, and logs every session for auditing.
 - Add an Auto Scaling group so the number of EC2 instances adjusts with traffic
 - Add HTTPS on the ALB using an ACM certificate, and redirect HTTP to HTTPS
 - Enable RDS Multi-AZ for database high availability
