@@ -85,8 +85,6 @@ The result is a chain where each layer only trusts the layer above it. Even if s
 
 The full build is captured in the [`screenshots/`](screenshots/) folder, numbered in build order: VPC, subnets, Internet Gateway, route table, security groups, EC2 instances, ALB, target group states, RDS, and the browser test.
 
-For the detailed reasoning behind each setup decision, see the [VPC Setup Notes](infrastructure/vpc-setup-notes.md).
-
 ## What I learned
 
 - Security group chaining clicks differently when you build it yourself versus reading about it. Referencing security groups by ID instead of by IP range is what makes the chain hold together as instances come and go.
